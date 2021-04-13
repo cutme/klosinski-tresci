@@ -1,0 +1,89 @@
+.o-list {
+    @extend %list-arrow;
+
+    a {
+        @extend %link;
+    }
+    
+    &--blackx {
+        li {
+            &:before {
+                top: 1px;
+                background-color: $c-black-01;
+                padding-right: 2px;
+                color: white;
+                content: "\e915";
+            }
+        }
+    }
+    
+    &--grayarrows {
+        li {
+            &:before {
+                top: -2px;
+                background-color: $c-gray-01;
+            }
+        }
+    }
+    
+    &--graychecks {
+        li {
+            &:before {
+                background-color: $c-gray-01;
+            }
+        }
+    }
+    
+    &--yellowarrows {
+        li {
+            &:before {
+                background-color: $c-primary;
+            }
+        }
+    }
+    
+    &--graychecks,
+    &--yellowchecks {
+        li {
+            &:before {
+                top: 0;
+                padding-right: 1px;
+                font-size: rem(9);
+//                content: "\e91d";
+                content: '\e915';
+            }
+        }
+    }
+    
+    &--yellowchecks {
+        li {
+            &:before {
+                background-color: $c-primary;
+            }
+        }
+    }    
+    
+    // size 
+
+    &--medium {    
+        li {
+            padding-left: 55px;
+
+            &:before {
+                width: 34px; height: 34px;
+                font-size: rem(9);
+            }
+        }
+    }
+    
+    &--small {    
+        li {
+            padding-left: 60px;
+
+            &:before {
+                width: 24px; height: 24px;
+                font-size: rem(6);
+            }
+        }
+    }
+}

@@ -1,0 +1,128 @@
+.c-why {
+
+    &__cta {
+        padding-left: 80px;
+        
+        @media ( max-width: $tablet + px ) {
+            padding-left: 0;
+        }
+    }
+    
+    .o-btn {
+        @media ( min-width: $smartphone_portrait + 1px ) {
+            margin-left: 60px;
+        }
+
+        @media ( max-width: $tablet + px ) {
+    	    width: calc(100% - 60px);
+            padding: {
+                left: 0;
+                right: 0;
+            }
+        }
+        
+        @media ( max-width: $smartphone_portrait + px ) {
+        	width: 100%;
+        }
+    }
+
+    .o-cols {
+        
+        @media ( max-width: $tablet_portrait + px ) {
+        	display: block;
+        }
+        
+        &__item {
+            &:last-of-type {
+                
+                @media ( min-width: $tablet_portrait + 1px ) {
+                    border-left: 1px solid $c-black-01;
+                    padding-left: 52px;
+                }
+                
+                .o-list {
+                    &:last-of-type {
+                        li {
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            @media ( max-width: $tablet_portrait + px ) {
+                width: 100%;
+            }
+        }
+    }
+
+    .o-header {
+        max-width: 360px;
+        
+        @media ( max-width: $tablet_portrait + px ) {
+            margin: {
+                left: auto;
+                right: auto;
+            }
+            text-align: center;
+        }
+        
+        img {
+            background-color: $c-primary;
+            border-radius: 50%;
+            margin-bottom: 48px;
+            
+            @media ( max-width: $tablet_portrait + px ) {
+            	margin: 0 auto 50px auto;
+            }
+        }
+
+        .o-lead {
+            
+            @media ( max-width: $tablet_portrait + px ) {
+                margin: {
+                    left: auto;
+                    right: auto;
+                }
+            }
+            
+            &--3 {
+                line-height: 1em;
+            }
+        }
+    }
+    
+    .o-lead {
+        &--5 {
+            margin-bottom: 2.5em;
+        }
+    }
+    
+    .o-list {
+        max-width: 470px;
+        margin-bottom: 80px;
+        
+        @media ( max-width: $tablet_portrait + px ) {
+            max-width: 100%;
+/*
+        	margin: {
+            	left: auto;
+            	right: auto;
+        	}
+*/
+        }
+    }
+    
+    .o-section {
+        padding-top: 150px;
+        
+        @media ( max-width: $smartphone_portrait + px ) {
+        	padding-top: 80px;
+        }
+        
+        @media ( max-width: $small + px ) {
+        	padding-top: 64px;
+        }
+    }
+}

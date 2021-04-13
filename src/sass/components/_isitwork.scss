@@ -1,0 +1,31 @@
+.c-isitwork {
+    
+    &__profile {
+        @extend %flex;
+        
+        @media ( max-width: $smartphone + px ) {
+        	margin-bottom: 60px;
+        }
+        
+        img {
+            align-self: baseline;
+            margin-right: 32px;
+        }
+    }
+    
+    .name {
+        @extend %lead;
+        @extend %lead--5;
+        font-weight: $heavy;
+        letter-spacing: normal;
+        margin-bottom: .6em;
+    }
+    
+    .position {
+        @extend %lead;
+        @extend %lead--6;
+        margin-bottom: 24px;
+        font-size: rem(11);
+    }
+}
+

@@ -1,0 +1,27 @@
+.c-faq {
+    
+    .o-accordion {
+        .o-list {
+            li {
+                p {
+                    max-width: 628px;
+                }
+            }
+        }
+    }
+    
+    .o-lead {
+        &--4 {
+            padding-right: 10px;
+            font-size: rem(18);
+            
+            @media ( max-width: $tablet + px ) {
+            	font-size: rem(16);
+            }
+            
+            @media ( max-width: $smartphone + px ) {
+            	font-size: rem(14);
+            }
+        }
+    }
+}

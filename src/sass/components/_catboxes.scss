@@ -1,0 +1,140 @@
+.c-catboxes {
+    overflow: auto;
+    
+    .c-boxes__items {
+        margin-bottom: 112px;
+        
+        @media ( max-width: $base + px ) {
+        	margin-bottom: base(112);
+        }
+    }
+
+    .o-box {
+     
+        @media ( max-width: $base + 64px ) {
+            min-height: base(344);
+        	margin-bottom: base(32);
+        }
+        
+        @media ( max-width: $tablet + px ) {
+        	width: calc(50% -16px);
+        	margin: 0 8px 16px 8px;
+        }
+        
+        @media ( max-width: $smartphone + px ) {
+            width: 100%;
+        	height: auto;
+            margin: 0 0 16px 0;
+        	padding: 32px;
+        }
+        
+        @media ( max-width: 375px ) {
+        	padding: 32px 24px;
+        }
+        
+        .icon-check-bold {
+            width: 24px; height: 24px;
+            margin-right: 25px;
+            flex-shrink: 0;
+            
+            &:before {
+                padding-left: 2px;
+                font-size: rem(7);
+            }
+        }
+        
+        [class^="icon-"] {
+            font-size: rem(20);
+        }
+        
+        .icon-clients {
+            padding-left: 5px;
+            font-size: rem(18);
+        }
+        
+        .icon-pen {
+            font-size: rem(17);
+        }
+        
+        .o-article {
+            margin-bottom: 32px;
+            
+            @media ( max-width: $smartphone_portrait + px ) {
+            	margin-bottom: 20px;
+            }
+            
+            &:not(:last-of-type) {
+                border-bottom: 1px solid $c-gray-01;
+                padding-bottom: 40px;
+                
+                @media ( max-width: $smartphone_portrait + px ) {
+                	padding-bottom: 20px;
+                }
+            }
+            
+            strong {
+                font-weight: $semibold !important;
+            }
+        }
+        
+        .o-lead--5 {
+            border-bottom: 1px solid $c-gray-01;
+            margin-bottom: 32px;
+            padding-bottom: 40px;
+            
+            @media ( max-width: $smartphone_portrait + px ) {
+            	margin-bottom: 20px;
+            	padding-bottom: 20px;
+            }
+        }
+        
+        .o-lead {
+            @extend %flex;
+            @extend %flex-y;
+            
+            &--5 {
+                font-weight: $heavy;
+                letter-spacing: normal;
+            }
+            
+            &--6 {
+                margin-bottom: 20px;
+                padding-top: 10px;
+                align-items: flex-start;
+                line-height: 1.5em;
+                
+                @media ( max-width: $smartphone_portrait + px ) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    
+    .o-section {
+        padding-bottom: 150px;
+        
+        @media ( max-width: $base + px ) {
+        	padding-bottom: base(150);
+        }
+    }
+    
+    &--course {
+        .o-box {
+            &:nth-of-type(odd) {
+                margin-top: 48px;
+            }
+            
+            &:nth-of-type(even) {
+                align-self: baseline;
+            }
+        }
+        
+        .o-section {
+            padding-bottom: 0;
+            
+            @media ( max-width: $base + px ) {
+            	padding-bottom: 0;
+            }
+        }
+    }
+}

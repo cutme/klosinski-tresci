@@ -1,0 +1,58 @@
+.o-cols {
+    @extend %flex;
+	width: 100%;
+    
+    &--2 {
+        @extend %flex-spacebetween;
+        
+        @media ( max-width: $smartphone + px ) {
+            display: block;
+        }
+
+        .o-cols__item {
+            
+            @media ( min-width: $smartphone + 1px ) {
+                width: 50%;
+//                width: grid(585, $base);
+            }
+        }
+    }
+    
+    &--3 {
+        @extend %flex-spacebetween;
+
+        .o-cols__item {
+            width: grid(368, $base);
+        }
+    }
+    
+    &--sidebar {
+        
+        .o-cols__item {
+            
+            &:first-of-type {
+                
+                @media ( min-width: $smartphone + 1px ) {
+                	width: grid(400);
+                }
+                
+            }
+            
+            &:last-of-type {
+                flex: 1;
+                
+                @media ( min-width: $smartphone + 1px ) {
+                    width: grid(770);
+                }
+            }
+        }
+    }
+
+/*
+    &__item {
+        @extend %rel;
+    }
+*/
+    
+}
+

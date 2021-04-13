@@ -1,0 +1,86 @@
+.c-intro {
+    margin-bottom: 144px;
+    padding-top: 140px;
+
+    @media ( max-width: $smartphone + px ) {
+        margin-bottom: 32px;
+        padding: {
+            top: 112px;
+            bottom: 10px;
+        }
+    	text-align: center;
+    }
+    
+    @media ( max-width: $smartphone_portrait + px ) {
+    	padding-top: 80px;
+    }
+    
+    @media ( max-width: $small + px ) {
+    	padding-top: 64px;
+    }
+    
+    .o-cols {       
+        &__item {            
+            
+            &:last-of-type {
+                margin-bottom: -144px;
+                padding-left: 56px;
+                padding-top: 56px;
+                
+                @media ( max-width: $base + 64px ) {
+                	padding: base(56) 0 0 base(56);
+                }
+                
+                @media ( max-width: $smartphone + px ) {
+                	padding: 0 0 48px 0;
+                }
+                
+                img {
+                    max-width: none;
+                    
+                   /// transform: translate3d(0, 160px, 0);
+                    
+                    @media ( max-width: $base + 64px ) {
+                        width: base(842);
+                    }
+                    
+                    @media ( max-width: $tablet + px ) {
+                    	width: 705px;
+                    }
+                                    
+                    @media ( max-width: $smartphone + px ) {
+                    	max-width: 100%;
+                    	margin: 32px auto;
+                    }
+                }
+            }
+        }
+    }
+    
+    .o-lead {
+        &--2 {
+            margin-bottom: 40px;
+            font-size: rem(40);
+            
+            @media ( max-width: $small + px ) {
+            	font-size: rem(32);
+            }
+        }
+    }
+    
+    .o-more {
+        left: 32px; bottom: 0;
+        background-color: $c-black-01;
+        transform: translateY(50%);
+        
+        @media ( max-width: $smartphone + px ) {
+        	display: none;
+        }
+    }
+    
+    .o-wrap {
+        @extend %rel;
+    }
+}
+
+

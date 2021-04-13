@@ -1,0 +1,103 @@
+.c-worth {
+    
+    &__info {
+        flex: 1;
+        
+        @media ( max-width: $smartphone_portrait + px ) {
+            position: relative;
+        	flex: 100%;
+        	margin: 20px auto 0 auto;
+            text-align: center;
+        }
+    }
+        
+    .c-post {
+        max-width: 610px;
+        margin: 0 auto;
+        
+        .o-article {
+            h5 {
+                margin-bottom: 1.5em;
+            }
+            
+            ol {
+                li {
+                    &:not(:last-child) {
+                        margin-bottom: 64px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .o-cols {
+        
+        .o-article {
+            margin-bottom: 40px;
+        }
+        
+        &--1 {
+            .o-cols__item {
+                max-width: 667px;
+                margin: {
+                    left: auto;
+                    right: auto;
+                }
+            }
+        }
+
+        &--2 {
+            .o-cols__item {
+                .o-article {
+                    max-width: 404px;
+                }
+                
+                .o-list {
+                    max-width: 404px;
+                }
+            }
+        }
+    }
+    
+    .o-header {
+        max-width: 740px;
+        
+        .o-lead {
+            &--2 {
+                @media ( max-width: $small + px ) {
+                    font-size: rem(22);
+                }
+            }
+        }
+    }
+    
+    .o-textblock {
+        @extend %flex;
+        @extend %flex-column;
+        @extend %flex-spacebetween;
+        height: 100%;
+        padding-left: 60px;
+        padding-right: 10px;
+        border-left: 1px solid $c-black-01;
+        
+        .o-lead {
+            &--5 {
+                margin-bottom: 42px;
+            }
+        }
+    }
+    
+  /*
+  .o-section {
+        padding-bottom: 0;
+        
+        @media ( max-width: $tablet + px ) {
+        	padding-top: tablet(160);
+        }
+        
+        @media ( max-width: $tablet_portrait + px ) {
+        	padding-top: 120px;
+        }
+    }
+*/
+}

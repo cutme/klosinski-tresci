@@ -1,0 +1,18 @@
+.o-textblock {
+    
+    .o-list {
+        font-weight: $semibold;
+        
+        li {
+            margin: 0;
+            padding-left: 60px;
+        }
+    }
+    
+    .o-lead {
+        &--5 {
+            letter-spacing: normal;
+            font-weight: $heavy;
+        }
+    }
+}
