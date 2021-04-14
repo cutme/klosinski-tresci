@@ -87,17 +87,16 @@
         }
     }
     
-  /*
   .o-section {
         padding-bottom: 0;
         
-        @media ( max-width: $tablet + px ) {
-        	padding-top: tablet(160);
+        @media ( max-width: $smartphone + px ) {
+            //padding-bottom: 160px;
+        	padding-bottom: base(160);
         }
         
-        @media ( max-width: $tablet_portrait + px ) {
-        	padding-top: 120px;
+        @media ( max-width: $smartphone_portrait + px ) {
+        	padding-bottom: 30px;
         }
     }
-*/
 }
